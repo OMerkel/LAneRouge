@@ -1,0 +1,22 @@
+{
+  "version": "0.1",
+  "name": "L'âne rouge",
+  "description": "L'âne rouge solitaire puzzle",
+  "launch_path": "/index.html",
+  "icons": {
+    "16": "/img/icons/lanerouge16.png",
+    "32": "/img/icons/lanerouge32.png",
+    "48": "/img/icons/lanerouge48.png",
+    "60": "/img/icons/lanerouge60.png",
+    "64": "/img/icons/lanerouge64.png",
+    "90": "/img/icons/lanerouge90.png",
+    "120": "/img/icons/lanerouge120.png",
+    "128": "/img/icons/lanerouge128.png",
+    "256": "/img/icons/lanerouge256.png"
+  },
+  "developer": {
+    "name": "Oliver Merkel",
+    "url": "https://github.com/OMerkel/LAneRouge"
+  },
+  "installs_allowed_from": ["*"]
+}
