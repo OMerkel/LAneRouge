@@ -523,6 +523,150 @@ Hmi.challenge = [
 },
 {
   tiles: [
+    { x: 1, y: 2, width: 2, height: 2, target: { x: 1, y: 3 } },
+    { x: 1, y: 0, width: 2, height: 1 },
+    { x: 1, y: 1, width: 2, height: 1 },
+    { x: 1, y: 4, width: 2, height: 1 },
+    { x: 0, y: 1, width: 1, height: 2 },
+    { x: 3, y: 1, width: 1, height: 2 },
+    { x: 0, y: 0, width: 1, height: 1 },
+    { x: 3, y: 0, width: 1, height: 1 },
+    { x: 0, y: 3, width: 1, height: 1 },
+    { x: 3, y: 3, width: 1, height: 1 }
+  ],
+  level: 'Advanced',
+  id: '32'
+},
+{
+  tiles: [
+    { x: 0, y: 0, width: 2, height: 2, target: { x: 1, y: 3 } },
+    { x: 0, y: 3, width: 2, height: 1 },
+    { x: 2, y: 0, width: 1, height: 2 },
+    { x: 2, y: 2, width: 1, height: 2 },
+    { x: 3, y: 0, width: 1, height: 2 },
+    { x: 3, y: 2, width: 1, height: 2 },
+    { x: 0, y: 2, width: 1, height: 1 },
+    { x: 1, y: 2, width: 1, height: 1 },
+    { x: 0, y: 4, width: 1, height: 1 },
+    { x: 1, y: 4, width: 1, height: 1 }
+  ],
+  level: 'Advanced',
+  id: '33'
+},
+{
+  tiles: [
+    { x: 0, y: 0, width: 2, height: 2, target: { x: 1, y: 3 } },
+    { x: 2, y: 1, width: 2, height: 1 },
+    { x: 0, y: 2, width: 2, height: 1 },
+    { x: 2, y: 2, width: 2, height: 1 },
+    { x: 1, y: 3, width: 2, height: 1 },
+    { x: 1, y: 4, width: 2, height: 1 },
+    { x: 2, y: 0, width: 1, height: 1 },
+    { x: 3, y: 0, width: 1, height: 1 },
+    { x: 0, y: 3, width: 1, height: 1 },
+    { x: 3, y: 3, width: 1, height: 1 }
+  ],
+  level: 'Advanced',
+  id: '34'
+},
+{
+  tiles: [
+    { x: 1, y: 1, width: 2, height: 2, target: { x: 1, y: 3 } },
+    { x: 0, y: 0, width: 1, height: 2 },
+    { x: 3, y: 2, width: 1, height: 2 },
+    { x: 2, y: 0, width: 2, height: 1 },
+    { x: 0, y: 3, width: 2, height: 1 },
+    { x: 2, y: 4, width: 2, height: 1 },
+    { x: 1, y: 0, width: 1, height: 1 },
+    { x: 3, y: 1, width: 1, height: 1 },
+    { x: 0, y: 2, width: 1, height: 1 },
+    { x: 2, y: 3, width: 1, height: 1 }
+  ],
+  level: 'Advanced',
+  id: '35'
+},
+{
+  tiles: [
+    { x: 2, y: 0, width: 2, height: 2, target: { x: 1, y: 3 } },
+    { x: 0, y: 0, width: 1, height: 2 },
+    { x: 1, y: 1, width: 1, height: 2 },
+    { x: 2, y: 2, width: 1, height: 2 },
+    { x: 3, y: 3, width: 1, height: 2 },
+    { x: 1, y: 4, width: 2, height: 1 },
+    { x: 1, y: 0, width: 1, height: 1 },
+    { x: 0, y: 2, width: 1, height: 1 },
+    { x: 3, y: 2, width: 1, height: 1 },
+    { x: 1, y: 3, width: 1, height: 1 }
+  ],
+  level: 'Advanced',
+  id: '36'
+},
+{
+  tiles: [
+    { x: 0, y: 0, width: 2, height: 2, target: { x: 1, y: 3 } },
+    { x: 2, y: 0, width: 1, height: 2 },
+    { x: 3, y: 1, width: 1, height: 2 },
+    { x: 0, y: 2, width: 1, height: 2 },
+    { x: 1, y: 3, width: 1, height: 2 },
+    { x: 1, y: 2, width: 2, height: 1 },
+    { x: 3, y: 0, width: 1, height: 1 },
+    { x: 2, y: 3, width: 1, height: 1 },
+    { x: 3, y: 3, width: 1, height: 1 },
+    { x: 0, y: 4, width: 1, height: 1 }
+  ],
+  level: 'Advanced',
+  id: '37'
+},
+{
+  tiles: [
+    { x: 0, y: 0, width: 2, height: 2, target: { x: 1, y: 3 } },
+    { x: 0, y: 2, width: 1, height: 2 },
+    { x: 1, y: 3, width: 1, height: 2 },
+    { x: 2, y: 2, width: 2, height: 1 },
+    { x: 2, y: 3, width: 2, height: 1 },
+    { x: 2, y: 4, width: 2, height: 1 },
+    { x: 2, y: 0, width: 1, height: 1 },
+    { x: 2, y: 1, width: 1, height: 1 },
+    { x: 3, y: 1, width: 1, height: 1 },
+    { x: 1, y: 2, width: 1, height: 1 }
+  ],
+  level: 'Advanced',
+  id: '38'
+},
+{
+  tiles: [
+    { x: 0, y: 1, width: 2, height: 2, target: { x: 1, y: 3 } },
+    { x: 3, y: 1, width: 1, height: 2 },
+    { x: 3, y: 3, width: 1, height: 2 },
+    { x: 2, y: 2, width: 1, height: 2 },
+    { x: 2, y: 0, width: 2, height: 1 },
+    { x: 1, y: 4, width: 2, height: 1 },
+    { x: 1, y: 0, width: 1, height: 1 },
+    { x: 0, y: 3, width: 1, height: 1 },
+    { x: 1, y: 3, width: 1, height: 1 },
+    { x: 0, y: 4, width: 1, height: 1 }
+  ],
+  level: 'Advanced',
+  id: '39'
+},
+{
+  tiles: [
+    { x: 0, y: 0, width: 2, height: 2, target: { x: 1, y: 3 } },
+    { x: 3, y: 0, width: 1, height: 2 },
+    { x: 3, y: 2, width: 1, height: 2 },
+    { x: 2, y: 1, width: 1, height: 2 },
+    { x: 0, y: 3, width: 2, height: 1 },
+    { x: 1, y: 4, width: 2, height: 1 },
+    { x: 2, y: 0, width: 1, height: 1 },
+    { x: 1, y: 2, width: 1, height: 1 },
+    { x: 2, y: 3, width: 1, height: 1 },
+    { x: 3, y: 4, width: 1, height: 1 }
+  ],
+  level: 'Advanced',
+  id: '40'
+},
+{
+  tiles: [
     { x: 1, y: 0, width: 2, height: 2, target: { x: 1, y: 3 } },
     { x: 0, y: 0, width: 1, height: 2 },
     { x: 1, y: 2, width: 2, height: 1 },
@@ -535,7 +679,7 @@ Hmi.challenge = [
     { x: 0, y: 4, width: 1, height: 1 }
   ],
   level: 'Expert',
-  id: '46'
+  id: '41'
 },
 {
   tiles: [
@@ -550,8 +694,8 @@ Hmi.challenge = [
     { x: 2, y: 2, width: 1, height: 1 },
     { x: 3, y: 1, width: 1, height: 1 }
   ],
-  level: 'Grand Master',
-  id: '61'
+  level: 'Expert',
+  id: '42'
 },
 {
   tiles: [
@@ -566,8 +710,8 @@ Hmi.challenge = [
     { x: 2, y: 3, width: 1, height: 1 },
     { x: 3, y: 3, width: 1, height: 1 }
   ],
-  level: 'Grand Master',
-  id: '62'
+  level: 'Expert',
+  id: '43'
 },
 {
   tiles: [
@@ -582,8 +726,8 @@ Hmi.challenge = [
     { x: 2, y: 3, width: 1, height: 1 },
     { x: 3, y: 1, width: 1, height: 1 }
   ],
-  level: 'Grand Master',
-  id: '63'
+  level: 'Expert',
+  id: '44'
 },
 {
   tiles: [
@@ -598,8 +742,8 @@ Hmi.challenge = [
     { x: 3, y: 1, width: 1, height: 1 },
     { x: 0, y: 3, width: 1, height: 1 }
   ],
-  level: 'Grand Master',
-  id: '64'
+  level: 'Expert',
+  id: '45'
 },
 {
   tiles: [
@@ -614,8 +758,8 @@ Hmi.challenge = [
     { x: 0, y: 3, width: 1, height: 1 },
     { x: 3, y: 3, width: 1, height: 1 }
   ],
-  level: 'Grand Master',
-  id: '65'
+  level: 'Expert',
+  id: '46'
 },
 {
   tiles: [
@@ -630,8 +774,8 @@ Hmi.challenge = [
     { x: 0, y: 4, width: 1, height: 1 },
     { x: 3, y: 4, width: 1, height: 1 }
   ],
-  level: 'Grand Master',
-  id: '66'
+  level: 'Expert',
+  id: '47'
 },
 {
   tiles: [
@@ -646,8 +790,24 @@ Hmi.challenge = [
     { x: 2, y: 4, width: 1, height: 1 },
     { x: 3, y: 4, width: 1, height: 1 }
   ],
-  level: 'Grand Master',
-  id: '67'
+  level: 'Expert',
+  id: '48'
+},
+{
+  tiles: [
+    { x: 0, y: 0, width: 2, height: 2, target: { x: 1, y: 3 } },
+    { x: 3, y: 1, width: 1, height: 2 },
+    { x: 3, y: 3, width: 1, height: 2 },
+    { x: 2, y: 2, width: 1, height: 2 },
+    { x: 0, y: 2, width: 2, height: 1 },
+    { x: 1, y: 4, width: 2, height: 1 },
+    { x: 1, y: 3, width: 1, height: 1 },
+    { x: 2, y: 0, width: 1, height: 1 },
+    { x: 2, y: 1, width: 1, height: 1 },
+    { x: 3, y: 0, width: 1, height: 1 }
+  ],
+  level: 'Expert',
+  id: '49'
 },
 {
   tiles: [
