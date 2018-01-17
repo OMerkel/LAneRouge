@@ -4,6 +4,8 @@
 L'âne rouge solitaire puzzle / Khun Phaen / Klotski
 
 * <em>Start a session in browser on http://omerkel.github.io/LAneRouge/html5/src/index.html </em>
+* <em>Android APK available for install</em> <img align="top" width="32" src="res/android.gif" /> https://github.com/OMerkel/LAneRouge/releases/tag/release_0.1
+    * requires minimum Android 4.4.2 (API-19)
 
 __Keywords, Categories__ _Puzzle, Solitaire, Single Player, Games/Entertainment, Mobile, JavaScript, ECMAScript_
 
