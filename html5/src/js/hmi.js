@@ -830,38 +830,16 @@ Hmi.challenge = [
 function Hmi() {}
 
 Hmi.prototype.resize = function () {
-  var offsetHeight = 64,
-    availableWidth = window.innerWidth - 32,
-    availableHeight = window.innerHeight - offsetHeight;
-  var size = Math.min(availableWidth, availableHeight);
-  this.paper.setSize( size, size );
-  var boardMarginTop = (availableHeight - size) / 2;
-  $('#board').css({ 'margin-top': boardMarginTop + 'px' });
-
-  $('#game-page').css({
-    'background-size': 'auto ' + (size/6) + 'px',
-  });
-  var size = size / 10;
-  var minSize = 60;
-  size = size < minSize ? minSize : size;
-  var maxSize = 120;
-  size = maxSize < size ? maxSize : size;
-  $('#customMenu').css({
-    'width': size+'px', 'height': size+'px',
-    'background-size': size+'px ' + size+'px',
-  });
-  $('#customBackRules').css({
-    'width': size+'px', 'height': size+'px',
-    'background-size': size+'px ' + size+'px',
-  });
-  $('#customBackOptions').css({
-    'width': size+'px', 'height': size+'px',
-    'background-size': size+'px ' + size+'px',
-  });
-  $('#customBackAbout').css({
-    'width': size+'px', 'height': size+'px',
-    'background-size': size+'px ' + size+'px',
-  });
+  var offsetHeight = 226,
+    offsetWidth = 64,
+    aspectRatioPanel = this.panel.y / this.panel.x,
+    innerWidth = window.innerWidth - offsetWidth,
+    innerHeight = window.innerHeight - offsetHeight,
+    aspectRatioInner = innerHeight / innerWidth;
+  var boardWidth = aspectRatioInner > aspectRatioPanel ? innerWidth : innerHeight / aspectRatioPanel,
+    boardHeight = boardWidth*aspectRatioPanel;
+  this.size = { x: boardWidth, y: boardHeight };
+  this.paper.setSize( this.size.x, this.size.y );
 };
 
 Hmi.prototype.setupChallenge = function (tile, paper, challenge) {
@@ -881,8 +859,9 @@ Hmi.prototype.setupChallenge = function (tile, paper, challenge) {
 };
 
 Hmi.prototype.initBoard = function () {
-  this.paper = Raphael( 'board', 400, 400);
-  this.paper.setViewBox(-0.7, -0.2, 4.4, 5.4, false );
+  this.panel = { x: 320, y: 400 };
+  this.paper = Raphael( 'board', this.panel.x, this.panel.y);
+  this.paper.setViewBox(-0.2, -0.2, 4.4, 5.4, false );
   this.paper.path( 'M-0.1,5.1L-0.1,5.1L-0.1,-0.1L4.1,-0.1L4.1,5.1z').attr({
     stroke: '#444', 'stroke-width': 0.2, 'stroke-linecap': 'round', fill: '#555'
   });
@@ -1031,25 +1010,21 @@ Hmi.prototype.init = function () {
 
 Hmi.prototype.restart = function() {
   this.updateChallenge();
-  $( '#left-panel' ).panel( 'close' );
 };
 
 Hmi.prototype.next = function() {
   this.challenge = (this.challenge + 1) % Hmi.challenge.length;
   this.updateChallenge();
-  $( '#left-panel' ).panel( 'close' );
 };
 
 Hmi.prototype.previous = function() {
   this.challenge = (this.challenge - 1 + Hmi.challenge.length ) % Hmi.challenge.length;
   this.updateChallenge();
-  $( '#left-panel' ).panel( 'close' );
 };
 
 Hmi.prototype.random = function() {
   this.challenge = Math.floor(Math.random() * Hmi.challenge.length );
   this.updateChallenge();
-  $( '#left-panel' ).panel( 'close' );
 };
 
 Hmi.prototype.updateChallenge = function() {
@@ -1067,7 +1042,7 @@ Hmi.prototype.updateChallenge = function() {
 
 Hmi.prototype.setHeader = function() {
   $('#myheader').html(
-    "L'âne rouge : " +
+    ' ' +
     Hmi.challenge[this.challenge].id + ' : ' +
     Hmi.challenge[this.challenge].level
   );
