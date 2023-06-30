@@ -1,0 +1,20 @@
+{
+  "name": "io.github.omerkel.lanerouge",
+  "displayName": "L'âne rouge",
+  "version": "0.2",
+  "description": "L'âne rouge sliding tiles solitaire puzzle. Also known as Khun Phaen or Klotski.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Oliver Merkel",
+  "license": "parts MIT / parts Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License / see LICENSE file for details",
+  "cordova": {
+    "plugins": {},
+    "platforms": [
+      "android"
+    ]
+  },
+  "devDependencies": {
+    "cordova-android": "^12.0.0"
+  }
+}
